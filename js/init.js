@@ -28,7 +28,7 @@ $(document).ready(function () {
 
 function getQuestion() {
     cleanBoard();
-    return $.getJSON("http://jservice.io/api/random", response => loadQuestion(response[0]));
+    return $.getJSON("https://jservice.io/api/random", response => loadQuestion(response[0]));
 }
 
 function loadQuestion(obj) {
