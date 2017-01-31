@@ -1,0 +1,40 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+.question-text {
+    padding: 10px;
+    margin: 10px 0;
+}
+.score {
+    display: flex;
+    justify-content: space-between;
+}
+.letters-container {
+    height: 30vh;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.letters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.letter {
+    margin: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}

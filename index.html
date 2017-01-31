@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Trivia Game</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+    <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">QUIZ GAME</a></div>
+    </nav>
+
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+            <div class="score">
+                <div id="correct">Correct Answers: <span>0</span></div>
+                <div id="total">Total Questions: <span>0</span></div>
+            </div>
+
+            <div class="row center">
+                <h2 class="header center orange-text">Question #<span id="question_id"></span></h2>
+                <h5 class="header col s12 light">Category: <span id="category"></span></h5><br><br>
+                <div class="question-text z-depth-1"><span id="question_text"></span></div>
+                <button id="skip-btn" class="btn-large waves-effect waves-light orange" onclick="skipQuestion()">Skip</button>
+
+                <div id="board" class="letters-container z-depth-1">
+                    <ul class="letters">
+                    </ul>
+                </div>
+                <div id="pool">
+                    <ul class="letters">
+                    </ul>
+                </div>
+            </div>
+            <br><br>
+        </div>
+    </div>
+
+    <!--  Scripts-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+</body>
+</html>
